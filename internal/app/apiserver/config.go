@@ -6,7 +6,8 @@ import (
 )
 
 type Config struct {
-	Port string `json:"port"`
+	Port        string `json:"port"`
+	DatabaseURL string `json:"database_url"`
 }
 
 func NewConfig() *Config {

@@ -21,6 +21,5 @@ func main() {
 		log.Fatalf("Error reading config file: %s\n", err)
 	}
 
-	s := apiserver.New(config)
-	log.Fatal(s.Start())
+	log.Fatal(apiserver.Start(config))
 }
